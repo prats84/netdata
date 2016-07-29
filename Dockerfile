@@ -1,7 +1,7 @@
 # netdata dockerfile by MO
 #
 # VERSION 16.10.0
-FROM debian:jessie 
+FROM ubuntu:16.04 
 MAINTAINER MO
 
 # Setup apt
