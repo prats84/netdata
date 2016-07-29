@@ -26,6 +26,6 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-# Start dionaea
+# Start netdata 
 WORKDIR /
 CMD ["/usr/sbin/netdata","-nd","-ch","/host","-i","127.0.0.1","-p","64301"]
