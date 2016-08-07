@@ -28,4 +28,4 @@ RUN apt-get update && \
 
 # Start netdata 
 WORKDIR /
-CMD ["/usr/sbin/netdata","-nd","-ch","/host","-i","127.0.0.1","-p","64301"]
+CMD ["/usr/sbin/netdata","-D","-s","/host","-i","127.0.0.1","-p","64301"]
